@@ -29,29 +29,30 @@ Navigate into the project folder and type the command
 ```
 make
 ```
-This will build the project and create the executable file in the folder of the project named
+This will build the project and in the folder of the project it will create the executable file named
 ```
 analogsat
 ```
 
 ## Running analogsat
 
-1. Copy your custom SAT problem files into the cnf folder. Please make sure that they are in DIMACS cnf format (see pre uploaded files for example).
-2. Run generateCFG.sh from the sh folder using the relative path from the cnf root folder the folder containing the cnf file.
-Eg.
+1. Copy your custom SAT problem files into the cnf folder. Please make sure that they are in DIMACS cnf format (see pre uploaded files for an example).
+2. Run generateCFG.sh from the sh folder using the relative path from the cnf root folder, the folder containing the cnf file.
+E.g.
 ```
 ./generateCFG.sh 2016/ms_random/highgirth/4sat
 ```
 This will generate the cfg file into the cfg folder.
+
 3. Run analogsat
 ```
 ./analogsat <CFG filename> <tmax> <Nprobb>
 ```
    where
-   * CFG filename - config file filename without extension from cfg folder CFG file must include the names of the problems in DIMACS cnf format
+   * CFG filename - config file filename without extension from cfg folder. CFG file must include the names of the problems in DIMACS cnf format
    * tmax - maximum analog time to simulate (0 < tmax <= 150). We recommend 35 or 50 depending on the size and complextiy of the problem.
    * Nprobb - initial number of trajectories (1000 <= Nprobb <= 2000000)
-   Eg.
+   E.g.
 ```
 ./analogsat 2016.ms_random.highgirth.3sat 50 100000
 ```
@@ -76,11 +77,11 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 * **Melinda VARGA**
 * **Zoltán TOROCZKAI**
 * **Mária-Magdolna ERCSEY-RAVASZ**
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/molnarb14/analog-maxSAT-solver/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE) file for details
 
 ## Acknowledgments
 
