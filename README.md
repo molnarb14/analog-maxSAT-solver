@@ -5,9 +5,9 @@ efficiently solve these problems. Here we present a continuous-time analog solve
 optimal assignment. Simulating the solver, we illustrate its performance on MaxSAT competition problems, then apply it to two-color Ramsey number R(m, m) problems. Although it finds colorings without monochromatic 5-cliques of complete graphs on N ≤ 42 vertices, the
 best coloring for N = 43 has two monochromatic 5-cliques, supporting the conjecture that R(5, 5) = 43. This approach shows the potential of continuous-time analog dynamical systems as algorithms for discrete optimization.
 
-For more details on how the system works please study:
-B Molnár, F Molnár, M Varga, Z Toroczkai & M Ercsey-Ravasz
-**A continuous-time Max-SAT solver with high analog performance**
+For more details on how the system works please study:  
+B Molnár, F Molnár, M Varga, Z Toroczkai & M Ercsey-Ravasz  
+**A continuous-time Max-SAT solver with high analog performance**  
 *Nature Communications, DOI: 10.1038/s41467-018-07327-2, 2018*
 
 ## Getting Started
